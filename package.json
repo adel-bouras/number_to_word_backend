@@ -6,8 +6,9 @@
   "node": ">=14.0.0"
 },
   "scripts": {
-    "postinstall": "g++ -o main main.cpp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "build": "g++ -o main main.cpp",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "",
